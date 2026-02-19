@@ -1,14 +1,22 @@
+:root {
+  --white: #ffffff;
+  --red: #ec3b40;
+  --redishPink: #ef476f;
+  --blue: #13559c;
+  --navyBlue: #001324;
+}
+
 * {
   margin: 0;
   padding: 0;
-  background-color: #001324;
+  background-color: var(--navyBlue);
 }
 
 .container {
   font-family: 'Montserrat', sans-serif;
-  color: #ffffff;
+  color: var(--white);
   min-height: 100vh;
-  display: block;
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -19,76 +27,144 @@
   position: relative;
 }
 
-.title {
+.content {
+  display: flex;
+}
+
+h1 {
   left: 15px;
   position: absolute;
-  top: -10px;
-  color: #ffffff;
+  top: -7px;
+  color: var(--white);
   font-size: 96px;
   background-color: transparent;
   z-index: 10;
 }
 
-.quote {
+h2 {
   text-align: center;
-  font-size: 36pt;
+  font-size: 48pt;
   position: absolute;
-  top: 50%;
-  bottom: 50%;
+  top: 35%;
+  bottom: 65%;
+  left: 15%;
+  right: 15%;
+}
+
+h3 {
+  font-size: 36pt;
+  color: var(--red);
+  background-color: transparent;
+  position: relative;
+  left: 11px;
+}
+
+h4 {
+  font-size: 22pt;
+  color: var(--red);
+  background-color: transparent;
+  position: relative;
+  left: 13px;
+}
+
+a {
+  font-size: 20pt;
+  color: var(--blue);
+  background-color: transparent;
+  position: relative;
+  left: 13px;
+  font-weight: bold;
+}
+
+strong {
+  font-size: 18pt;
+  color: var(--white);
+  background-color: transparent;
+  position: relative;
+  left: 13px;
+}
+
+p {
+  font-size: 18pt;
+  color: var(--white);
+  background-color: transparent;
+  position: relative;
+  left: 13px;
+}
+
+.footnote {
+  font-size: 12pt;
+  color: var(--white);
+  left: 13px;
+}
+
+.pricingTable {
+  display: grid;
+  grid-template-columns: 255px 32.5px 110px 89px 27.5px 100px;
 }
 
 .dropdownBtn {
   z-index: 10;
-  position: absolute;
+  position: fixed;
   right: 15px;
   top: 15px;
   width: max-content;
   padding: 0 30px;
   height: 75px;
   font-size: 28pt;
-  background: #ffffff;
+  background: var(--white);
   border: none;
   border-radius: 30px;
   color: #000;
   outline: none;
   cursor: pointer;
-  transition: all 0.4s;
+  transition: all 0.2s;
 }
 
 .dropdownBtn:hover {
-  box-shadow: inset 0 0 0 6px #ec3b40, 
-              inset 0 0 0 12px #13559c;
-  background: #031920;
-  color: #fff;
+  box-shadow: inset 0 0 0 6px var(--red), 
+              inset 0 0 0 12px var(--blue);
+  background: var(--navyBlue);
+  color: var(--white);
 }
 
 .dropdownContent {
   z-index: 10;
   top: 110px;
   right: 15px;
-  display: none;
+  visibility: hidden;
   position: absolute;
-  background-color: #001d36;
-  border: #ffffff dashed 1px;
-  width: max-content;
-  height: max-content;
-  border-radius: 15px;
+  background-color: var(--navyBlue)cc;
+  width: 165px;
+  height: 75px;
+  border-radius: 30px;
+  border: 1px solid #ffffff40;
+  transform: all 0.2s;
+  opacity: 0;
+  transition: opacity 0.1s, visibility 0.1s;
+}
+
+.dropdownContent.visible {
+  visibility: visible;
+  opacity: 1;
 }
 
 .dropdownContent a {
+  z-index: 15;
   display: block;
-  color: #ffffff;
+  color: #ffffffcc;
   text-decoration: none;
   background-color: transparent;
   font-size: 24px;
   position: relative;
-  left: 5px;
+  left: 15px;
+  top: 15px;
   line-height: 0.50;
   transition: all 0.2s;
 }
 
 .dropdownContent a:hover {
-  color: #ef476f;
+  color: var(--redishPink);
 }
 
 .btnBack .circle {
@@ -98,10 +174,10 @@
   margin: 0;
   width: 3rem;
   height: 3rem;
-  background-color: #031920;
+  background-color: var(--navyBlue);
   border-radius: 1.625rem;
   float: right;
-  box-shadow: inset 0 0 0 2px #ffffff
+  box-shadow: inset 0 0 0 2px var(--white)
 }
 
 .btnBack .circle .icon {
@@ -110,7 +186,7 @@
   top: 0;
   bottom: 0;
   margin: auto;
-  background: #ffffff;
+  background: var(--white);
 }
 
 .btnBack .circle .icon.arrow {
@@ -129,8 +205,8 @@
   left: 0rem;
   width: 0.625rem;
   height: 0.625rem;
-  border-top: 0.125rem solid #ffffff;
-  border-left: 0.125rem solid #ffffff;
+  border-top: 0.125rem solid var(--white);
+  border-left: 0.125rem solid var(--white);
   transform: rotate(-45deg);
 }
 
@@ -143,7 +219,7 @@
   right: 2.75rem;
   bottom: 0rem;
   padding: 0.725rem 0;
-  color: #ffffff;
+  color: var(--white);
   font-weight: 525;
   line-height: 1.6;
   text-align: center;
@@ -158,6 +234,6 @@
 }
 
 .btnBack:hover .circle .icon.arrow {
-  background: #ffffff;
+  background: var(--white);
   transform: translate(-0.5rem, 0);
 }
