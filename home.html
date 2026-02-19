@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PFSCD_TOOLS</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1 class="title">SCIVIS</h1>
+            <div class="dropdown">
+                <button class="dropdownBtn" onclick="toggleDropdown()">Menu </button>
+                <div class="dropdownContent">
+                    <a href="https://example.com">Example 1</a>
+                    <br>
+                    <a href="https://example.com">Example 2</a>
+                </div>
+            </div>
+            <div class="hero">
+                <img src="heroimg.jpg" alt="Hero Image" width="100%" top="0">
+                <h2 class="quote">"Just because I can't see the stars, doesn't mean I can't reach for them."</h2>
+            </div>
+        </div>
+        <script>
+            function toggleDropdown() {
+                const dropdownContent = document.querySelector('.dropdownContent');
+                dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+            }
+        </script>
+    </body>
+</html>
