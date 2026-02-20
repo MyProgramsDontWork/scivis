@@ -13,49 +13,68 @@
 
     <body>
         <div class="container" onclick="hideDropdown()">
-            <h1>SCIVIS</h1>
-            <div class="dropdown">
-                <button class="dropdownBtn" onclick="toggleDropdown(event)">Menu </button>
-                <div class="dropdownContent">
-                    <a href="https://example.com">Example 1</a>
-                    <br>
-                    <a href="https://example.com">Example 2</a>
+            <div class="navbar">
+                <img src="logo.png">
+                <div class="dropdown">
+                    <button class="dropdownBtn" onclick="toggleDropdown(event)">Menu </button>
+                    <div class="dropdownContent">
+                        <a href="https://example.com">Example 1</a>
+                        <br>
+                        <a href="https://example.com">Example 2</a>
+                    </div>
                 </div>
             </div>
             <div class="hero">
-                <img src="heroimg.jpg" alt="Hero Image" width="100%" draggable="false" oncontextmenu="return false">  
+                <img src="heroimg.jpg" draggable="false" oncontextmenu="return false">  
                 <h2 class="quote">"Just because I can't see the stars, doesn't mean I can't reach for them."</h2>
             </div>
             <div class="content">
                 <div>
-                    <h3>Registration Info:</h3>
-                    <p>Registration will be opening in May or June of 2026. Stay tuned for more information.</p>
-                    <br>
-                    <h3>Pricing:</h3>
-                    <div class="pricingTable">
-                        <p>Space Camp</p> <p>&</p> <p>Mach I</p> <p>(9-11)</p> <p>-</p> <strong>$1395</strong>
-                        <p>Space Academy</p> <p>&</p> <p>Mach II</p> <p>(12-14)</p> <p>-</p> <strong>$1467</strong>
-                        <p>Advanced Academy</p> <p>&</p> <p>Mach III</p> <p>(15-18)</p> <p>-</p> <strong>$1539</strong>
-                        <p>Airport Transport</p> <p></p> <p></p> <p></p> <p></p> <strong>$75</strong>
-                        <p>Early Arrival</p> <p></p> <p></p> <p></p> <p></p> <strong>$150</strong>
-                        <p>Bedding Rental</p> <p></p> <p></p> <p></p> <p></p> <strong>$10</strong>
-                        <p>Photo Package</p> <p></p> <p></p> <p></p> <p></p> <strong>Free</strong>
+                    <div class="card">
+                        <h3>Registration Info:</h3>
+                        <p>Registration will be opening in May or June of 2026.</p>
+                        <p>Stay tuned for more info.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Pricing:</h3>
+                        <div class="pricingTable">
+                            <p>Space Camp</p> <p>&</p> <p>Mach I</p> <p>(9-11)</p> <p>-</p> <strong>$1395</strong>
+                            <p>Space Academy</p> <p>&</p> <p>Mach II</p> <p>(12-14)</p> <p>-</p> <strong>$1467</strong>
+                            <p>Advanced Academy</p> <p>&</p> <p>Mach III</p> <p>(15-18)</p> <p>-</p> <strong>$1539</strong>
+                            <p>Airport Transport</p> <p></p> <p></p> <p></p> <p></p> <strong>$75</strong>
+                            <p>Early Arrival</p> <p></p> <p></p> <p></p> <p></p> <strong>$150</strong>
+                            <p>Bedding Rental</p> <p></p> <p></p> <p></p> <p></p> <strong>$10</strong>
+                            <p>Photo Package</p> <p></p> <p></p> <p></p> <p></p> <strong>Free</strong>
+                        </div>
                     </div>
                 </div>
-                <div>
+                <div class="card">
                     <h3>Scholarships:</h3>
                     <a href="https://docs.google.com/forms/d/1GUfCNpf8BI93tXyRkhO08mE0_Y4MNwVS3eER08YTwVY">Delta Gamma</a>
                     <p>Delta Gamma offers tuiton scholarships for students in the U.S. and Canada.</p>
                     <a href="https://docs.google.com/forms/d/14Ku-j05u6h7k5ZX_CFbu7EjU04apAwaAVR3ncCHxzZw/">Northrop Grumman</a>
                     <p>Northrop Grumman offers a full scholarship for all students.</p>
                     <a href="https://docs.google.com/forms/d/1exUextLHqudN_hBrte61-TwKC_ZbFtg18k19j52Ncps/">St. Louis Lighthouse for the Blind</a>
-                    <p>The St. Louis Lighthouse for the Blind offers full scholarship for students with unique cultural lives. Typically this entales international students and students with unique heritage..</p>
+                    <p>The St. Louis Lighthouse for the Blind offers full scholarship for students with unique cultural lives (typically international students and students with unique heritage).</p>
                     <br>
                     <p class="footnote">  *Full scholarships only cover tuition and base airfare not including things like unacompanied minor f.</p>
                 </div>
             </div>
         </div>
+        
         <script>
+            const navbar = document.querySelector(".navbar");
+
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 5) {
+                navbar.classList.add("scrolled");
+                console.log("scrolled")
+                 } else {
+                navbar.classList.remove("scrolled");
+                console.log("unscrollled")
+                }
+            });
+
             function toggleDropdown() {
                 event.stopPropagation();
                 const dropdownContent = document.querySelector('.dropdownContent');

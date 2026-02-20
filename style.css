@@ -3,7 +3,24 @@
   --red: #ec3b40;
   --redishPink: #ef476f;
   --blue: #13559c;
+  --lightBlue:#186ac2;
   --navyBlue: #001324;
+
+  --text-xs: 0.9rem;
+  --text-sm: 1rem;
+  --text-md: 1.25rem;
+  --text-lg: 1.6rem;
+  --text-xl: 2rem;
+  --text-2xl: 3rem;
+  --text-3xl: 5rem;
+
+  --lh-tight: 1.1;
+  --lh-normal: 1.6;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 * {
@@ -21,86 +38,65 @@
   justify-content: flex-start;
   align-items: flex-start;
   text-align: left;
+  box-sizing: border-box;
 }
 
 .hero {
   position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      to bottom,
+      #00000033 30%,
+      #001324F0 100%
+    );
+}
+
+.hero img {
+  alt: "Hero Image";
+  width: 100%;
+  display: block;
+  padding-bottom: 15px
 }
 
 .content {
+  padding: 32px 20px;
   display: flex;
+  max-width: 100%;
+  overflow-x: hidden;
+  flex: 1;
+  min-width: 0;
 }
 
-h1 {
+.navbar {
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  height: 105px;
+  z-index: 20;
+  transition: all 0.2s;
+}
+
+.navbar.scrolled {
+  background-color: #ffffff10;
+  backdrop-filter: blur(8px);
+}
+
+.navbar img {
+  z-index: 15;
+  position: fixed;
   left: 15px;
-  position: absolute;
-  top: -7px;
-  color: var(--white);
-  font-size: 96px;
-  background-color: transparent;
-  z-index: 10;
-}
-
-h2 {
-  text-align: center;
-  font-size: 48pt;
-  position: absolute;
-  top: 35%;
-  bottom: 65%;
-  left: 15%;
-  right: 15%;
-}
-
-h3 {
-  font-size: 36pt;
-  color: var(--red);
-  background-color: transparent;
-  position: relative;
-  left: 11px;
-}
-
-h4 {
-  font-size: 22pt;
-  color: var(--red);
-  background-color: transparent;
-  position: relative;
-  left: 13px;
-}
-
-a {
-  font-size: 20pt;
-  color: var(--blue);
-  background-color: transparent;
-  position: relative;
-  left: 13px;
-  font-weight: bold;
-}
-
-strong {
-  font-size: 18pt;
-  color: var(--white);
-  background-color: transparent;
-  position: relative;
-  left: 13px;
-}
-
-p {
-  font-size: 18pt;
-  color: var(--white);
-  background-color: transparent;
-  position: relative;
-  left: 13px;
-}
-
-.footnote {
-  font-size: 12pt;
-  color: var(--white);
-  left: 13px;
-}
-
-.pricingTable {
-  display: grid;
-  grid-template-columns: 255px 32.5px 110px 89px 27.5px 100px;
+  top: 15px;
+  border-radius:50%;
+  height: 75px;
+  width: 75px;
 }
 
 .dropdownBtn {
@@ -118,7 +114,7 @@ p {
   color: #000;
   outline: none;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.4s;
 }
 
 .dropdownBtn:hover {
@@ -133,15 +129,14 @@ p {
   top: 110px;
   right: 15px;
   visibility: hidden;
-  position: absolute;
+  position: fixed;
   background-color: var(--navyBlue)cc;
   width: 165px;
   height: 75px;
   border-radius: 30px;
   border: 1px solid #ffffff40;
-  transform: all 0.2s;
   opacity: 0;
-  transition: opacity 0.1s, visibility 0.1s;
+  transition: opacity 0.4s, visibility 0.4s;
 }
 
 .dropdownContent.visible {
@@ -160,11 +155,99 @@ p {
   left: 15px;
   top: 15px;
   line-height: 0.50;
-  transition: all 0.2s;
+  transition: all 0.4s;
 }
 
 .dropdownContent a:hover {
   color: var(--redishPink);
+}
+
+h1 {
+  left: var(--text-2xl);
+  position: absolute;
+  top: -7px;
+  color: var(--white);
+  font-size: 96pt;
+  background-color: transparent;
+  z-index: 10;
+}
+
+h2 {
+  text-align: center;
+  font-size: var(--text-2xl);
+  position: absolute;
+  top: 35%;
+  bottom: 65%;
+  left: 15%;
+  right: 15%;
+  z-index: 15;
+  text-shadow: 0 4px 20px #00000099;
+}
+
+h3 {
+  font-size: var(--text-xl);
+  color: var(--red);
+  background-color: transparent;
+  position: relative;
+  left: 11px;
+}
+
+h4 {
+  font-size: var(--text-lg);
+  color: var(--red);
+  background-color: transparent;
+  position: relative;
+  left: 13px;
+}
+
+a {
+  font-size: var(--text-md);
+  color: var(--blue);
+  background-color: transparent;
+  position: relative;
+  left: 12px;
+  font-weight: bold;
+  transition: all 0.4s;
+}
+
+a:hover {
+  color: var(--lightBlue);
+}
+
+strong {
+  font-size: var(--text-sm);
+  color: var(--white);
+  background-color: transparent;
+  position: relative;
+  left: 13px;
+}
+
+p {
+  font-size: var(--text-sm);
+  color: var(--white);
+  background-color: transparent;
+  position: relative;
+  left: 13px;
+}
+
+.card {
+  background-color: #ffffff05;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px #00000059;
+  margin: 20px 10px;
+}
+
+.pricingTable {
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: 175px 25px 75px 65px 27.5px 100px;
+}
+
+.footnote {
+  font-size: var(--text-xs);
+  color: var(--white);
+  left: 13px;
 }
 
 .btnBack .circle {
