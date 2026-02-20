@@ -182,6 +182,7 @@ h2 {
   right: 15%;
   z-index: 15;
   text-shadow: 0 4px 20px #00000099;
+  background: transparent;
 }
 
 h3 {
@@ -230,6 +231,20 @@ p {
   left: 13px;
 }
 
+.pLink {
+  font-size: var(--text-sm);
+  color: var(--white);
+  background-color: transparent;
+  position: relative;
+  left: 12px;
+  font-weight: 400;
+  transition: all 0.4s;
+}
+
+.pLink:hover {
+  color: var(--lightBlue);
+}
+
 .card {
   background-color: #ffffff05;
   padding: 28px;
@@ -241,7 +256,7 @@ p {
 .pricingTable {
   background-color: transparent;
   display: grid;
-  grid-template-columns: 175px 25px 75px 65px 27.5px 100px;
+  grid-template-columns: 175px 25px 75px 90px 22.5px 100px;
 }
 
 .footnote {
