@@ -1,2 +1,2 @@
 # scivis
-rework of website that hasnt been changed since the obama administration because me no like website bleh
+rework of website to make perty (also i dont use vibe coding because ai is stupid)
