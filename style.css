@@ -6,13 +6,13 @@
   --lightBlue:#186ac2;
   --navyBlue: #001324;
 
-  --text-xs: 0.9rem;
-  --text-sm: 1rem;
-  --text-md: 1.25rem;
-  --text-lg: 1.6rem;
-  --text-xl: 2rem;
-  --text-2xl: 3rem;
-  --text-3xl: 5rem;
+  --text-xs: 1.35rem;
+  --text-sm: 1.5rem;
+  --text-md: 1.875rem;
+  --text-lg: 2.4rem;
+  --text-xl: 3rem;
+  --text-2xl: 4.5rem;
+  --text-3xl: 7.5rem;
 
   --lh-tight: 1.1;
   --lh-normal: 1.6;
@@ -39,6 +39,12 @@ html, body {
   align-items: flex-start;
   text-align: left;
   box-sizing: border-box;
+  padding: 0 20px;
+  max-width: 100%;
+  overflow-x: hidden;
+  flex: 1;
+  min-width: 0;
+  position: static;
 }
 
 .hero {
@@ -67,12 +73,12 @@ html, body {
 }
 
 .content {
-  padding: 32px 20px;
   display: flex;
   max-width: 100%;
   overflow-x: hidden;
   flex: 1;
   min-width: 0;
+  position: static;
 }
 
 .navbar {
@@ -89,14 +95,32 @@ html, body {
   backdrop-filter: blur(8px);
 }
 
-.navbar img {
-  z-index: 15;
+.navbar .scivis-logo {
+  z-index: 25;
   position: fixed;
-  left: 15px;
   top: 15px;
+  left: 15px;
   border-radius:50%;
   height: 75px;
   width: 75px;
+}
+
+.scivis-logo {
+  z-index: 25;
+  border-radius:50%;
+  height: 75px;
+  width: 75px;
+}
+
+.ussrc-logo {
+  z-index: 25;
+  width: 125px;
+  height: 75px
+}
+
+.astronaut {
+  z-index: 25;
+  height: 350px;
 }
 
 .dropdownBtn {
@@ -163,13 +187,11 @@ html, body {
 }
 
 h1 {
-  left: var(--text-2xl);
-  position: absolute;
-  top: -7px;
+  font-size: var(--text-3xl);
   color: var(--white);
-  font-size: 96pt;
   background-color: transparent;
-  z-index: 10;
+  position: relative;
+  left: 0;
 }
 
 h2 {
@@ -190,15 +212,15 @@ h3 {
   color: var(--red);
   background-color: transparent;
   position: relative;
-  left: 11px;
+  left: 0;
 }
 
 h4 {
   font-size: var(--text-lg);
-  color: var(--red);
+  color: var(--white);
   background-color: transparent;
   position: relative;
-  left: 13px;
+  left: 2px;
 }
 
 a {
@@ -206,9 +228,10 @@ a {
   color: var(--blue);
   background-color: transparent;
   position: relative;
-  left: 12px;
+  left: 1px;
   font-weight: bold;
   transition: all 0.4s;
+  display: inline;
 }
 
 a:hover {
@@ -220,7 +243,8 @@ strong {
   color: var(--white);
   background-color: transparent;
   position: relative;
-  left: 13px;
+  left: 2px;
+  display: inline;
 }
 
 p {
@@ -228,7 +252,8 @@ p {
   color: var(--white);
   background-color: transparent;
   position: relative;
-  left: 13px;
+  left: 2px;
+  display: inline;
 }
 
 .pLink {
@@ -236,33 +261,73 @@ p {
   color: var(--white);
   background-color: transparent;
   position: relative;
-  left: 12px;
+  left: 1px;
   font-weight: 400;
   transition: all 0.4s;
+  display: inline;
 }
 
 .pLink:hover {
   color: var(--lightBlue);
 }
 
+.footerLink {
+  font-size: var(--text-sm);
+  color: var(--white);
+  background-color: transparent;
+  position: relative;
+  left: 1px;
+  font-weight: 400;
+  transition: all 0.4s;
+  display: inline;
+  text-decoration: none;
+}
+
+.footerLink:hover {
+  color: var(--redishPink);
+}
+
 .card {
   background-color: #ffffff05;
-  padding: 28px;
+  padding-top: 15px;
+  padding-bottom: 16px;
+  padding-left: 22px;
+  padding-right: 22px;
   border-radius: 16px;
   box-shadow: 0 10px 30px #00000059;
   margin: 20px 10px;
 }
 
+.homeLeft {
+  min-width: 550px;
+  max-width: 45vw;
+}
+
+.homeRight {
+  min-width: 45vw;
+  max-width: 65vw;
+}
+
 .pricingTable {
   background-color: transparent;
   display: grid;
-  grid-template-columns: 175px 25px 75px 90px 22.5px 100px;
+  grid-template-columns: 257.5px 35px 110px 130px 32.5px 100px;
 }
 
 .footnote {
   font-size: var(--text-xs);
   color: var(--white);
   left: 13px;
+}
+
+.footer {
+  padding-top: 15px;
+  padding-bottom: 16px;
+  padding-left: 22px;
+  padding-right: 22px;
+  margin: 20px 10px;
+  display: flex;
+  gap: 25px;
 }
 
 .btnBack .circle {
