@@ -61,7 +61,7 @@ html, body {
 }
 
 .heroHome img {
-  alt: "Hero Image";
+  alt: "Hero Image (Picture of Earth)";
   width: 100%;
   display: block;
   padding-bottom: 15px
@@ -86,7 +86,7 @@ html, body {
 }
 
 .hero video {
-  alt: "Hero Video (testimonies)";
+  alt: "Hero Video (Testimonies)";
   width: 100%;
   display: block;
   padding-bottom: 15px
