@@ -42,6 +42,31 @@ html, body {
   position: static;
 }
 
+.heroHome {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.heroHome::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      to bottom,
+      #00000000 30%,
+      #001324F0 70%
+    );
+}
+
+.heroHome img {
+  alt: "Hero Image";
+  width: 100%;
+  display: block;
+  padding-bottom: 15px
+}
+
 .hero {
   position: relative;
   width: 100%;
@@ -60,8 +85,8 @@ html, body {
     );
 }
 
-.hero img {
-  alt: "Hero Image";
+.hero video {
+  alt: "Hero Video (testimonies)";
   width: 100%;
   display: block;
   padding-bottom: 15px
@@ -96,6 +121,39 @@ html, body {
   margin: 0 15px;
   top: 110px;
   display: flex;
+}
+
+.playBtn {
+  background-color: transparent;
+  z-index: 30;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 47.5%;
+  border: none;
+  transition: all 0.5s
+}
+
+.playBtn svg, .playBtn svg path {
+  background-color: #ffffff10;
+  backdrop-filter: blur(8px);
+  border-radius: 30%;
+}
+
+.playBtn.paused {
+  opacity: 1;
+}
+
+.playBtn.playing {
+  opacity: 0.2;
+}
+
+.playBtn.playing svg, .playBtn.playing svg path {
+  background-color: #ffffff40
+}
+
+.playBtn:hover {
+  opacity: 1;
 }
 
 .navbar {

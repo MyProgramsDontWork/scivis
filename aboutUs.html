@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SCIVIS | Home</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+
+    <body>
+        <div class="container" onclick="hideDropdown()">
+            <div class="navbar">
+                <nav>
+                    <img src="scivis-logo.png" class="scivis-logo">
+                    <div class="dropdown">
+                        <button class="dropdownBtn" onclick="toggleDropdown(event)">Menu </button>
+                        <div class="dropdownContent">
+                            <a href="camperInfo.html">Camper Info</a>
+                            <br>
+                            <a href="faq.html">FAQs</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="hero">
+                <video src="testimonies.mp4" class="heroVideo" poster="testimoniesThumbnail.png" playsinline></video>
+                <button class="playBtn" onclick="playVideo()">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3"><path d="M320-203v-560l440 280-440 280Zm60-280Zm0 171 269-171-269-171v342Z"/></svg>
+                </button>
+            </div>
+            <div class="contentHome">
+                <div class="homeLeft">
+                    <div class="card">
+                        <h3>What SCIVIS is:</h3>
+                        <p>SCIVIS (Space Camp for Interested Visually Impaired Students) is a version of Space Camp, Space Camp Robotics, and Aviation Challenge for visually impaired students that takes place at the U.S. Space & Rocket Center (USSRC)</p>
+                    </div>
+                    <div class="card">
+                        <h3>Pricing:</h3>
+                        <div class="pricingTable">
+                            <p>Space Camp</p> <p>&</p> <p>Mach I</p> <p>(9-11 yrs, grades 4-6)</p> <p>-</p> <strong>$1395</strong>
+                            <p>Space Academy</p> <p>&</p> <p>Mach II</p> <p>(12-14 yrs, grades 7-9)</p> <p>-</p> <strong>$1467</strong>
+                            <p>Advanced Academy</p> <p>&</p> <p>Mach III</p> <p>(15-18 yrs, grades 10-12)</p> <p>-</p> <strong>$1539</strong>
+                            <p>Airport Transport</p> <p></p> <p></p> <p></p> <p></p> <strong>$75</strong>
+                            <p>Early Arrival</p> <p></p> <p></p> <p></p> <p></p> <strong>$150</strong>
+                            <p>Bedding Rental</p> <p></p> <p></p> <p></p> <p></p> <strong>$10</strong>
+                            <p>Photo Package</p> <p></p> <p></p> <p></p> <p></p> <strong>Free</strong>
+                        </div>
+                        <br>
+                        <p class="footnote"> *Bedding can be rented through the registration form</p>
+                    </div>
+                    <div class="card">
+                        <h3>SCIVIS Creed:</h3>
+                        <p>"We are all here to learn with our peers. Let us celebrate our similarities and our differences. Let us respect other cultures, religions, and languages. At our beginning, many were given little chance but due to the people in our lives, we find ourselves in a wonderful place with wonderful people. Let us flourish in our learning, find joy in our experiences and remember our friends and knowledge we gained at Space Camp." - Dan Oates</p>
+                    </div>
+                    <div class="footer">
+                        <div>
+                            <img src="astronaut.png" alt="astronaut" class="astronaut">
+                        </div>
+                        <div>
+                            <img src="scivis-logo.png" alt="scivis logo" class="scivis-logo">
+                            <h4>SCIVIS Info:</h4>
+                            <br>
+                            <p>190 Armstrong St.</p>
+                            <br>
+                            <p>Romney, WV 26757</p>
+                            <br>
+                            <br>
+                            <p>Leave A Message</p>
+                            <br>
+                            <a href="tel:304051-5600" class="footerLink">+1 304-851-5680</a>
+                            <br>
+                            <a href="mailto:scivis.oates@gnail.com" class="footerLink">scivis.oates@gmail.com</a>
+                        </div>
+                        <div>
+                            <img src="ussrc-logo.png" alt="ussrc logo" class="ussrc-logo">
+                            <br>
+                            <h4>USSRC Info:</h4>
+                            <br>
+                            <p>One Tranquility Base</p>
+                            <br>
+                            <p>Huntsville, AL 35805</p>
+                            <br>
+                            <br>
+                            <a href="tel:256837-3400" class="footerLink">+1 (256) 837 3400</a>
+                            <br>
+                            <a href="tel:1800637-7223" class="footerLink">+1 (800) 637 7223</a>
+                            <br>
+                            <a href="mailto:camps@spacecamp.com" class="footerLink">camp@spacecamp.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="homeRight">
+                    <div class="card">
+                        <h3>Registration Info:</h3>
+                        <p>Camp registration will be opening online in May or June of 2026.</p>
+                        <p>Scholarship registration is open online now.</p>
+                        <p>Stay tuned on our website and social media for more info.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Scholarships:</h3>
+                        <a href="https://docs.google.com/forms/d/1GUfCNpf8BI93tXyRkhO08mE0_Y4MNwVS3eER08YTwVY">Delta Gamma</a>
+                        <br>
+                        <p>Delta Gamma offers tuiton scholarships for students in the U.S. and Canada.</p>
+                        <br>
+                        <a href="https://docs.google.com/forms/d/14Ku-j05u6h7k5ZX_CFbu7EjU04apAwaAVR3ncCHxzZw/">Northrop Grumman</a>
+                        <br>
+                        <p>Northrop Grumman offers a full scholarship for all students.</p>
+                        <br>
+                        <a href="https://docs.google.com/forms/d/1exUextLHqudN_hBrte61-TwKC_ZbFtg18k19j52Ncps/">St. Louis Lighthouse for the Blind</a>
+                        <br>
+                        <p>The St. Louis Lighthouse for the Blind offers full scholarship for students with unique cultural lives (typically international students and students with unique heritage).</p>
+                        <br>
+                        <a>Local Organizations</a>
+                        <br>
+                        <p>Many civic organizations are open to funding the Space Camp Experience for blind and visually impaired children. Promising your funding organization a program at their weekly meeting when you return is advised to show appreciation.</p>
+                        <br>
+                        <br>
+                        <p class="footnote">  *Full scholarships only cover tuition and base airfare not including things like airport food</p>
+                    </div>
+                    <div class="card">
+                        <h3>Room and Board::</h3>
+                        <p>Chaperones, parents, and guests can stay at nearby hotels at their own expense. Campers must stay on site unless medical exemptions are required. The closest hotel is the Huntsville Marriott at the Space & Rocket Center located at 5 Tranquility Base. Group rates may be available on</p>
+                        <a class="pLink" href="https://www.facebook.com/groups/340858066080864"> our facebook page.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            const navbar = document.querySelector(".navbar");
+
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 5) {
+                navbar.classList.add("scrolled");
+                console.log("scrolled")
+                 } else {
+                navbar.classList.remove("scrolled");
+                console.log("unscrollled")
+                }
+            });
+
+            function playVideo() {
+                const btn = document.querySelector(".playBtn");
+                const video = document.querySelector(".heroVideo");
+
+                if (video.paused) {
+                    video.play();
+                    btn.classList.add("playing")
+                    btn.classList.remove("paused")
+                    btn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3"><path d="M525-200v-560h235v560H525Zm-325 0v-560h235v560H200Zm385-60h115v-440H585v440Zm-325 0h115v-440H260v440Zm0-440v440-440Zm325 0v440-440Z"/></svg>`;
+                    } else {
+                    btn.classList.add("paused")
+                    btn.classList.remove("playing")
+                    video.pause();
+                    btn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3"><path d="M320-203v-560l440 280-440 280Zm60-280Zm0 171 269-171-269-171v342Z"/></svg>`;
+                }
+            }
+
+            function toggleDropdown() {
+                event.stopPropagation();
+                const dropdownContent = document.querySelector('.dropdownContent');
+                dropdownContent.classList.toggle('visible');
+            }
+            function hideDropdown() {
+                const dropdownContent = document.querySelector('.dropdownContent');
+                dropdownContent.classList.remove('visible');
+            }
+        </script>
+    </body>
+</html>

@@ -225,16 +225,6 @@
                 console.log("unscrollled")
                 }
             });
-
-            function toggleDropdown() {
-                event.stopPropagation();
-                const dropdownContent = document.querySelector('.dropdownContent');
-                dropdownContent.classList.toggle('visible');
-            }
-            function hideDropdown() {
-                const dropdownContent = document.querySelector('.dropdownContent');
-                dropdownContent.classList.remove('visible');
-            }
             
             document.querySelectorAll('details').forEach(el => {
                 el.addEventListener('toggle', () => {
