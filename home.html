@@ -127,29 +127,6 @@
                 </div>
             </div>
         </div>
-        
-        <script>
-            const navbar = document.querySelector(".navbar");
-
-            window.addEventListener("scroll", () => {
-                if (window.scrollY > 5) {
-                navbar.classList.add("scrolled");
-                console.log("scrolled")
-                 } else {
-                navbar.classList.remove("scrolled");
-                console.log("unscrollled")
-                }
-            });
-
-            function toggleDropdown() {
-                event.stopPropagation();
-                const dropdownContent = document.querySelector('.dropdownContent');
-                dropdownContent.classList.toggle('visible');
-            }
-            function hideDropdown() {
-                const dropdownContent = document.querySelector('.dropdownContent');
-                dropdownContent.classList.remove('visible');
-            }
-        </script>
+        <script src="script.js"></script>
     </body>
 </html>

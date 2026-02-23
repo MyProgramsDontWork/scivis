@@ -212,30 +212,6 @@
                 </div>
             </div>
         </div>
-        
-        <script>
-            const navbar = document.querySelector(".navbar");
-
-            window.addEventListener("scroll", () => {
-                if (window.scrollY > 5) {
-                navbar.classList.add("scrolled");
-                console.log("scrolled")
-                 } else {
-                navbar.classList.remove("scrolled");
-                console.log("unscrollled")
-                }
-            });
-            
-            document.querySelectorAll('details').forEach(el => {
-                el.addEventListener('toggle', () => {
-                    if (el.open) {
-                    const h4 = el.querySelector('h4');
-                    h4.style.animation = 'none';
-                    h4.offsetHeight;
-                    h4.style.animation = '';
-                    }
-                });
-            });
-        </script>
+        <script src="script.js"></script>
     </body>
 </html>
