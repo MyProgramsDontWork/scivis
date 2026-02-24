@@ -3,19 +3,21 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SCIVIS | Home</title>
+        <title>SCIVIS | About Us</title>
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="icon" href="assets/scivis-logo.ico" type="image/x-icon">
+        <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
     </head>
 
     <body>
         <div class="container" onclick="hideDropdown()">
             <div class="navbar">
                 <nav>
-                    <img src="assets/scivis-logo.png" class="scivis-logo">
+                    <a href="home.html">
+                        <img src="assets/scivis-logo.png" class="scivis-logo" draggable="false" oncontextmenu="return false">
+                    </a>
                     <div class="dropdown">
                         <button class="dropdownBtn" onclick="toggleDropdown(event)">Menu </button>
                         <div class="dropdownContent">
@@ -28,7 +30,7 @@
             </div>
             <div class="hero">
                 <video src="assets/testimonies.mp4" class="heroVideo" poster="assets/testimoniesThumbnail.png" playsinline></video>
-                <button class="playBtn" onclick="playVideo()">
+                <button class="playBtn" alt="play pause button" onclick="playVideo()">
                     <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3"><path d="M320-203v-560l440 280-440 280Zm60-280Zm0 171 269-171-269-171v342Z"/></svg>
                 </button>
             </div>

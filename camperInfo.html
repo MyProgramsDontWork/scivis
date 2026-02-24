@@ -3,27 +3,30 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SCIVIS | Home</title>
+        <title>SCIVIS | Camper Info</title>
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="icon" href="assets/scivis-logo.ico" type="image/x-icon">
+        <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
     </head>
 
     <body>
         <div class="container" onclick="hideDropdown()">
             <div class="navbar">
-                <img src="assets/scivis-logo.png" class="scivis-logo">
-                <button class="backBtn" onclick="window.location.href='home.html'">Home</button>
-                <div class="dropdown">
-                    <button class="dropdownBtn" onclick="toggleDropdown(event)">Menu</button>
-                    <div class="dropdownContent">
-                        <a href="https://example.com">Example 1</a>
-                        <br>
-                        <a href="https://example.com">Example 2</a>
+                <nav>
+                    <a href="home.html">
+                        <img src="assets/scivis-logo.png" class="scivis-logo" draggable="false" oncontextmenu="return false">
+                    </a>
+                    <div class="dropdown">
+                        <button class="dropdownBtn" onclick="toggleDropdown(event)">Menu </button>
+                        <div class="dropdownContent">
+                            <a href="camperInfo.html">Camper Info</a>
+                            <br>
+                            <a href="faq.html">FAQs</a>
+                        </div>
                     </div>
-                </div>
+                </nav>
             </div>
             <div class="contentNoCards">
                 <h1>Camper Information</h1>
@@ -88,12 +91,12 @@
                     <div class="card">
                         <h3>Habitat 1 Map:</h3>
                         <br>
-                        <img src="assets/hab1.png" alt="map of habitat 1" width="500px">
+                        <img src="assets/hab1.png" alt="map of habitat 1">
                     </div>
                     <div class="card">
                         <h3>Aviation Challenge Map:</h3>
                         <br>
-                        <img src="assets/hab3.png" alt="map of aviation challenge" width="500px">
+                        <img src="assets/hab3.png" alt="map of aviation challenge">
                     </div>
                 </div>
             </div>

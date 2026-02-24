@@ -8,20 +8,26 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="icon" href="assets/scivis-logo.ico" type="image/x-icon">
+        <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
     </head>
 
     <body>
         <div class="container" onclick="hideDropdown()">
             <div class="navbar">
                 <nav>
-                    <img src="assets/scivis-logo.png" class="scivis-logo">
+                    <a href="home.html">
+                        <img src="assets/scivis-logo.png" class="scivis-logo" draggable="false" oncontextmenu="return false">
+                    </a>
                     <div class="dropdown">
                         <button class="dropdownBtn" onclick="toggleDropdown(event)">Menu </button>
                         <div class="dropdownContent">
-                            <a href="camperInfo.html">Camper Info</a>
+                            <a href="aboutus.html">About Us</a>
+                            <br>
+                            <a href="camperinfo.html">Camper Info</a>
                             <br>
                             <a href="faq.html">FAQs</a>
+                            <br>
+                            <a href="eyeinfo.html">Eye Info</a>
                         </div>
                     </div>
                 </nav>
@@ -30,7 +36,7 @@
                 <img src="assets/heroimg.jpg" draggable="false" oncontextmenu="return false">  
                 <h2>"Just because I can't see the stars, doesn't mean I can't reach for them."</h2>
             </div>
-            <div class="contentHome">
+            <div class="content">
                 <div class="homeLeft">
                     <div class="card">
                         <h3>What SCIVIS is:</h3>
