@@ -55,8 +55,8 @@ html, body {
   background:
     linear-gradient(
       to bottom,
-      #00000000 30%,
-      #001324F0 70%
+      #00000000 70%,
+      #001324F0 100%
     );
 }
 
@@ -73,17 +73,7 @@ html, body {
   z-index: 1;
 }
 
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(
-      to bottom,
-      #00000033 30%,
-      #001324F0 100%
-    );
-}
+
 
 .hero video {
   alt: "Hero Video (Testimonies)";
