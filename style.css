@@ -236,6 +236,7 @@ html, body {
   visibility: hidden;
   position: fixed;
   background-color: #ffffff10;
+  backdrop-filter: blur(8px);
   width: 220px;
   height: 167.5px;
   border-radius: 20px;
