@@ -241,7 +241,7 @@ html, body {
 }
 
 .dropdownContent.scrolled {
-  background-color: #ffffff20;
+  background-color: #ffffff10;
   backdrop-filter: blur(8px);
 }
 
