@@ -235,9 +235,9 @@ html, body {
   right: 15px;
   visibility: hidden;
   position: fixed;
-  background-color: var(--navyBlue)cc;
-  width: 190px;
-  height: 135px;
+  background-color: #ffffff10;
+  width: 220px;
+  height: 167.5px;
   border-radius: 20px;
   border: 1px solid #ffffff40;
   opacity: 0;
@@ -277,7 +277,7 @@ h1 {
   color: var(--white);
   background-color: transparent;
   position: relative;
-  left: 0;
+  left: -5;
 }
 
 h2 {
@@ -377,6 +377,19 @@ p {
   display: inline;
 }
 
+ul {
+  padding-left: 50px;
+  list-style: disc;
+  background-color: transparent;
+}
+
+li {
+  content: "•";
+  font-size: var(--text-sm);
+  color: var(--white);
+  background-color: transparent;
+}
+
 .pLink {
   font-size: var(--text-sm);
   color: var(--white);
@@ -441,6 +454,12 @@ p {
   border-radius: 16px;
   box-shadow: 0 10px 30px #00000059;
   margin: 20px 10px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .pricingTable {
