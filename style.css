@@ -1,10 +1,12 @@
 :root {
-  --white: #ffffff;
+  --contrastingColor: #ffffff;
+  --unconstrastingColor: #000000;
   --red: #ec3b40;
   --redishPink: #ef476f;
   --blue: #13559c;
   --lightBlue:#186ac2;
-  --navyBlue: #001324;
+  --bgColor: #001324;
+  --bgColor: #001324F0;
 
   --text-xs: 1.35rem;
   --text-sm: 1.5rem;
@@ -20,15 +22,18 @@ html, body {
   overflow-x: hidden;
 }
 
+body {
+  background-color: var(--navyBlue);
+}
+
 * {
   margin: 0;
   padding: 0;
-  background-color: var(--navyBlue);
 }
 
 .container {
   font-family: 'Montserrat', sans-serif;
-  color: var(--white);
+  color: var(--contrastingColor);
   min-height: 100vh;
   flex-direction: column;
   justify-content: flex-start;
@@ -74,7 +79,6 @@ html, body {
 }
 
 
-
 .hero video {
   alt: "Hero Video (Testimonies)";
   width: 100%;
@@ -99,7 +103,7 @@ html, body {
   min-width: 0;
   position: relative;
   margin: 0 15px;
-  display: flex;
+  display: flex
 }
 
 .playBtn {
@@ -203,10 +207,10 @@ html, body {
   padding: 0 30px;
   height: 75px;
   font-size: 28pt;
-  background: var(--white);
+  background: var(--contrastingColor);
   border: none;
   border-radius: 30px;
-  color: #000000;
+  color: var(--uncontrastingColor);
   outline: none;
   cursor: pointer;
   transition: all 0.4s;
@@ -216,16 +220,13 @@ html, body {
   box-shadow: inset 0 0 0 6px var(--red), 
               inset 0 0 0 12px var(--blue);
   background: var(--navyBlue);
-  color: var(--white);
+  color: var(--contrastingColor);
 }
 
 .dropdownContent {
-  z-index: 10;
   top: 110px;
   right: 15px;
-  visibility: hidden;
   position: fixed;
-  background-color: #ffffff10;
   backdrop-filter: blur(8px);
   width: 220px;
   height: 167.5px;
@@ -236,13 +237,12 @@ html, body {
 }
 
 .dropdownContent.visible {
-  visibility: visible;
   opacity: 1;
+  z-index: 30;
 }
 
 .dropdownContent.scrolled {
-  background-color: #ffffff10;
-  backdrop-filter: blur(8px);
+  background-color: #ffffff;
 }
 
 .dropdownContent a {
@@ -265,7 +265,7 @@ html, body {
 
 h1 {
   font-size: var(--text-3xl);
-  color: var(--white);
+  color: var(--contrastingColor);
   background-color: transparent;
   position: relative;
   left: -5;
@@ -294,7 +294,7 @@ h3 {
 
 h4 {
   font-size: var(--text-lg);
-  color: var(--white);
+  color: var(--contrastingColor);
   background-color: transparent;
   position: relative;
   left: 2px;
@@ -361,7 +361,7 @@ details[open] h4 {
 
 p {
   font-size: var(--text-sm);
-  color: var(--white);
+  color: var(--contrastingColor);
   background-color: transparent;
   position: relative;
   left: 2px;
@@ -377,13 +377,13 @@ ul {
 li {
   content: "•";
   font-size: var(--text-sm);
-  color: var(--white);
+  color: var(--contrastingColor);
   background-color: transparent;
 }
 
 .pLink {
   font-size: var(--text-sm);
-  color: var(--white);
+  color: var(--contrastingColor);
   background-color: transparent;
   position: relative;
   font-weight: 400;
@@ -412,7 +412,7 @@ li {
 
 .footerLink {
   font-size: var(--text-sm);
-  color: var(--white);
+  color: var(--contrastingColor);
   background-color: transparent;
   position: relative;
   left: 1px;
@@ -461,7 +461,7 @@ li {
 
 .footnote {
   font-size: var(--text-xs);
-  color: var(--white);
+  color: var(--contrastingColor);
   left: 13px;
 }
 
