@@ -1,0 +1,20 @@
+:root {
+    color-scheme: light dark;
+    --text: #fafafc;
+    --bgColor: #222225;
+    --red: #ec3b40;
+    --lightRed: #ef476f;
+    --blue: #13559c;
+    --lightBlue:#186ac2;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --text: #222225;
+        --bgColor: #fafafc;
+        --accent: #ec3b40;
+        --accent-muted: #ef476f;
+        --primary: #13559c;
+        --primary-muted:#186ac2;
+    }
+}
