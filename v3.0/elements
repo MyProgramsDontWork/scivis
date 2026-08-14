@@ -12,5 +12,5 @@
         <hr>
         <button>test</button>
 
-        <script src="ts/utils.ts"></script>
+        <script src="js/utils.js"></script>
     </body>
