@@ -1,20 +1,36 @@
 :root {
+    /* colors */
     color-scheme: light dark;
     --text: #fafafc;
-    --bgColor: #222225;
-    --red: #ec3b40;
-    --lightRed: #ef476f;
-    --blue: #13559c;
-    --lightBlue:#186ac2;
+    --bg-color: #222225;
+    --accent-muted: #ec3b40;
+    --accent: #ef476f;
+    --primary-muted: #0f4a87;
+    --primary:#186ac2;
+    --focus: #00eab9;
+
+    /* typography */
+    --font-display: "ITC Avant Garde Gothic LT Bold", sans-serif;
+    --font-base: "Lufga", sans-serif;
+
+    --text-xs: 0.875rem;
+    --text-sm: 1rem;
+    --text-base: 1.125rem;
+    --text-md: 1.25rem;
+    --text-lg: 1.5rem;
+    --text-xl: 1.875rem;
+    --text-2xl: 2.4rem;
+    --text-3xl: 3rem;
 }
 
 @media (prefers-color-scheme: light) {
     :root {
         --text: #222225;
-        --bgColor: #fafafc;
-        --accent: #ec3b40;
-        --accent-muted: #ef476f;
-        --primary: #13559c;
-        --primary-muted:#186ac2;
+        --bg-color: #fafafc;
+        --accent-muted: #ec3b40;
+        --accent: #ef476f;
+        --primary-muted: #0f4a87;
+        --primary:#114d8f;
+        --focus: #00b38a;
     }
 }
