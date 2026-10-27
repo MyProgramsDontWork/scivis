@@ -22,10 +22,18 @@
         <title>Elements</title>
     </head>
     <body>
-        <h1>Elements Testing</h1>
-        <hr>
-        <button>test</button>
-
+        <div>
+            <h1>Elements Testing</h1>
+            <hr>
+            <button>test</button>
+        </div>
+        <div>
+            <h2>test</h2>
+            <h3>test</h3>
+            <h4>test</h4>
+            <h5>test</h5>
+            <p>testing</p>
+        </div>
         <script src="js/utils.js"></script>
     </body>
 </html>

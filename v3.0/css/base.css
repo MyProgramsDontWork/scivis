@@ -18,26 +18,35 @@ textarea:focus-visible {
     outline: 3px solid var(--focus);
 }
 
+body {
+    font-family: var(--font-base)
+}
+
 h1 {
     font-family: var(--font-display);
+    font-size: var(--text-3xl)
 }
 
 h2 {
     font-family: var(--font-display);
+    font-size: var(--text-2xl)
 }
 
 h3 {
     font-family: var(--font-display);
+    font-size: var(--text-xl)
 }
 
 h4 {
     font-family: var(--font-display);
+    font-size: var(--text-lg)
 }
 
 h5 {
     font-family: var(--font-display);
+    font-size: var(--text-md)
 }
 
-h6 {
-    font-family: var(--font-display);
+p {
+    font-family: var(--font-base);
 }
