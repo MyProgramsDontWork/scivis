@@ -10,6 +10,22 @@
     --focus: #00eab9;
 
     /* typography */
+    @font-face {
+        font-family: "ITC Avant Garde Gothic";
+        src: url(v3.0/assets/ITC Avant Garde Gothic LT Bold.otf) format(opentype);
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Lufga";
+        src: url(v3.0/assets/Lufga Regular.otf) format(opentype);
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+    }
+
     --font-display: "ITC Avant Garde Gothic LT Bold", sans-serif;
     --font-base: "Lufga", sans-serif;
 

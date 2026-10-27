@@ -5,6 +5,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/tokens.css">
         <link rel="stylesheet" href="css/base.css">
+        <link rel="prefetch" href="home/index.html">
+        <script type="speculationrules">
+        {
+            "prefetch": [
+                {
+                    "source": "document",
+                    "where":{
+                        "href_matches": "/*/"
+                    },
+                    "eagerness": "moderate"
+                }
+            ]
+        }
+        </script>
         <title>Elements</title>
     </head>
     <body>
@@ -14,3 +28,4 @@
 
         <script src="js/utils.js"></script>
     </body>
+</html>
