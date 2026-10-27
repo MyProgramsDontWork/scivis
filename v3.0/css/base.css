@@ -17,3 +17,27 @@ textarea:focus-visible {
 :focus-visible {
     outline: 3px solid var(--focus);
 }
+
+h1 {
+    font-family: var(--font-display);
+}
+
+h2 {
+    font-family: var(--font-display);
+}
+
+h3 {
+    font-family: var(--font-display);
+}
+
+h4 {
+    font-family: var(--font-display);
+}
+
+h5 {
+    font-family: var(--font-display);
+}
+
+h6 {
+    font-family: var(--font-display);
+}
