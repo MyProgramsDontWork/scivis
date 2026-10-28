@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/tokens.css">
         <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/utilities.css">
         <link rel="prefetch" href="home/index.html">
         <script type="speculationrules">
         {
@@ -22,17 +23,21 @@
         <title>Elements</title>
     </head>
     <body>
-        <div>
+        <div class="container">
             <h1>Elements Testing</h1>
             <hr>
-            <button>test</button>
-        </div>
-        <div>
-            <h2>test</h2>
-            <h3>test</h3>
-            <h4>test</h4>
-            <h5>test</h5>
-            <p>testing</p>
+            <div class="split">
+                <div>
+                    <button>test</button>
+                </div>
+                <div>
+                    <h2>test</h2>
+                    <h3>test</h3>
+                    <h4>test</h4>
+                    <h5>test</h5>
+                    <p>testing</p>
+                </div>
+            </div>
         </div>
         <script src="js/utils.js"></script>
     </body>
