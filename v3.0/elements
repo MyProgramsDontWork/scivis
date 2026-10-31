@@ -24,20 +24,20 @@
     </head>
     <body>
         <div class="container layout-grid">
-            <h1>Elements Testing</h1>
-            <hr>
-            <div class="split">
-                <div>
-                    <button>test</button>
-                </div>
-                <div>
-                    <h2>test</h2>
-                    <h3>test</h3>
-                    <h4>test</h4>
-                    <h5>test</h5>
-                    <p>testing</p>
-                    <a href="/elements">test</a>
-                </div>
+            <div class="col-12">
+                <h1>Elements Testing</h1>
+                <hr>
+            </div>
+            <div class="col-4">
+                <button>test</button>
+            </div>
+            <div class="col-8">
+                <h2>test</h2>
+                <h3>test</h3>
+                <h4>test</h4>
+                <h5>test</h5>
+                <p>testing</p>
+                <a href="/elements">test</a>
             </div>
         </div>
         <script src="js/utils.js"></script>
