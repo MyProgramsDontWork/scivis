@@ -64,72 +64,74 @@ textarea:focus {
  outline: none;   
 }
 
-/* input:focus-visible, */
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--accent)
+}
 
 a:focus-visible,
 button:focus-visible,
-select:focus-visible,
-textarea:focus-visible {
-    outline: 3px solid var(--focus);
+select:focus-visible {
+  outline: 3px solid var(--focus);
 }
 
 :focus-visible {
-    outline: 3px solid var(--focus);
+  outline: 3px solid var(--focus);
 }
 
 body {
-    font-family: var(--font-base);
-    background-color: var(--bg-color);
+  font-family: var(--font-base);
+  background-color: var(--bg-color);
 }
 
 h1 {
-    font-family: var(--font-display);
-    font-size: var(--step-5);
+  font-family: var(--font-display);
+  font-size: var(--step-5);
 }
 
 h2 {
-    font-family: var(--font-display);
-    font-size: var(--step-4);
+  font-family: var(--font-display);
+  font-size: var(--step-4);
 }
 
 h3 {
-    font-family: var(--font-display);
-    font-size: var(--step-3);
+  font-family: var(--font-display);
+  font-size: var(--step-3);
 }
 
 h4 {
-    font-family: var(--font-display);
-    font-size: var(--step-2);
+  font-family: var(--font-display);
+  font-size: var(--step-2);
 }
 
 h5 {
-    font-family: var(--font-display);
-    font-size: var(--step-1);
+  font-family: var(--font-display);
+  font-size: var(--step-1);
 }
 
 p {
-    font-family: var(--font-base);
-    font-size: var(--step-0);
+  font-family: var(--font-base);
+  font-size: var(--step-0);
 }
 
 a {
-    font-family: var(--font-base);
-    font-size: var(--step-0);
-    color: var(--primary);
-    transition: color 0.3s;
+  font-family: var(--font-base);
+  font-size: var(--step-0);
+  color: var(--primary);
+  transition: color 0.3s;
 }
 
 a:hover {
-    color: var(--accent);
-    transition: color 0.3s;
+  color: var(--accent);
+  transition: color 0.3s;
 }
 
 small, figcaption, time {
-    font-family: var(--font-base);
-    font-size: var(--step--1)
+  font-family: var(--font-base);
+  font-size: var(--step--1)
 }
 
 .disclaimer {
-    font-family: var(--font-base);
-    font-size: var(--step--2)
+  font-family: var(--font-base);
+  font-size: var(--step--2)
 }
