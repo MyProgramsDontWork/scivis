@@ -64,9 +64,10 @@ textarea:focus {
  outline: none;   
 }
 
+/* input:focus-visible, */
+
 a:focus-visible,
 button:focus-visible,
-input:focus-visible,
 select:focus-visible,
 textarea:focus-visible {
     outline: 3px solid var(--focus);

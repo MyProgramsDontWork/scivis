@@ -1,0 +1,5 @@
+.btn {
+    corner-shape: squircle;
+    border-radius: 999px;
+    border: none;
+}
