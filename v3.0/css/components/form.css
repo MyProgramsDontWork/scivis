@@ -1,0 +1,6 @@
+input {
+  corner-shape: squircle;
+  border-radius: 40px;
+  border: none;
+  padding: 6px 12px;
+}
