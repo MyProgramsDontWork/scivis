@@ -67,7 +67,7 @@ textarea:focus {
 input:focus-visible,
 textarea:focus-visible {
   outline: 2px solid var(--accent);
-  outline-offset: -2spx;
+  outline-offset: -2px;
 }
 
 a:focus-visible,
